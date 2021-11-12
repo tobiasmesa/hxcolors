@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+  
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#palleteContainer {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.palleteItem {
+    transition:  background-color .5s;
+}
+
+.palleteItem span {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.05);
+    color: #fff;
+    display: inline-block;
+    min-width: 80px;
+};
+
+

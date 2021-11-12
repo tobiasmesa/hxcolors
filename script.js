@@ -29,12 +29,17 @@ const colorize = (element) => {
 const updatePallete = () => {
     for (let i = 0; i < palleteContainer.children.length; i++) {
         colorize(palleteContainer.children[i])
-        
-        
     }
 };
 
 
+const copyColor = () => {
+
+};
+
+
+createPallete();
+/*
 const changeBackground = () => {
     let color = '#';
     for(let i = 0; i < 6; i++) {
@@ -45,6 +50,8 @@ const changeBackground = () => {
     colorHex.innerHTML = `COLOR: ${color}`; 
 
  
-};
+}; */
 
-createPallete();
+
+
+
